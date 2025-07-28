@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Remove Cookie - 사이트 데이터 정리",
+  "version": "1.0.0",
+  "description": "특정 사이트의 쿠키, 세션, 로컬 스토리지 등 모든 기록을 삭제하는 도구",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "browsingData",
+    "storage",
+    "activeTab",
+    "history",
+    "cookies"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Remove Cookie - 사이트 데이터 정리",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "host_permissions": [
+    "*://*/*"
+  ]
+}
