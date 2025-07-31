@@ -190,6 +190,275 @@
             color: #666;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
+        
+        /* 모달 스타일 */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+        
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 500px;
+            max-height: 80%;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 20px;
+            border-bottom: 1px solid #eee;
+            background: #f8f9fa;
+        }
+        
+        .modal-header h4 {
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+        }
+        
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #666;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .close-btn:hover {
+            background: #e9ecef;
+            border-radius: 50%;
+        }
+        
+        .modal-body {
+            padding: 20px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .modal-footer {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            padding: 16px 20px;
+            border-top: 1px solid #eee;
+            background: #f8f9fa;
+        }
+        
+        .detail-section {
+            margin-bottom: 20px;
+        }
+        
+        .detail-section h5 {
+            margin: 0 0 10px 0;
+            font-size: 14px;
+            color: #333;
+            font-weight: 600;
+        }
+        
+        .detail-item {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 12px;
+        }
+        
+        .detail-item:last-child {
+            border-bottom: none;
+        }
+        
+        .detail-label {
+            font-weight: 500;
+            color: #666;
+            display: inline-block;
+            width: 80px;
+        }
+        
+        .detail-value {
+            color: #333;
+        }
+        
+        .cookie-item {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 4px;
+            padding: 8px 10px;
+            margin-bottom: 8px;
+            font-size: 11px;
+        }
+        
+        .cookie-name {
+            font-weight: 600;
+            color: #4285f4;
+            margin-bottom: 4px;
+        }
+        
+        .cookie-details {
+            color: #666;
+            line-height: 1.4;
+        }
+        
+        .site-item {
+            cursor: pointer;
+        }
+        
+        .site-item:hover .site-domain {
+            color: #4285f4;
+        }
+        
+        .detail-btn {
+            padding: 4px 8px;
+            background: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 11px;
+            margin-left: 5px;
+        }
+        
+        .detail-btn:hover {
+            background: #3367d6;
+        }
+        
+        .btn-sm {
+            padding: 2px 6px;
+            font-size: 10px;
+            margin-top: 4px;
+        }
+        
+        /* 탭 스타일 */
+        .tab-container {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 16px;
+            background: white;
+            border-radius: 6px 6px 0 0;
+        }
+        
+        .tab-btn {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            background: #f8f9fa;
+            cursor: pointer;
+            font-size: 13px;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+        
+        .tab-btn:first-child {
+            border-radius: 6px 0 0 0;
+        }
+        
+        .tab-btn:last-child {
+            border-radius: 0 6px 0 0;
+        }
+        
+        .tab-btn.active {
+            background: white;
+            border-bottom-color: #4285f4;
+            color: #4285f4;
+            font-weight: 500;
+        }
+        
+        .tab-btn:hover:not(.active) {
+            background: #e9ecef;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .worker-item {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+            transition: background-color 0.2s;
+            background: white;
+        }
+        
+        .worker-item:hover {
+            background: #f8f9fa;
+        }
+        
+        .worker-item:last-child {
+            border-bottom: none;
+        }
+        
+        .worker-info {
+            flex: 1;
+        }
+        
+        .worker-type {
+            font-weight: 500;
+            color: #333;
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+        
+        .worker-details {
+            font-size: 11px;
+            color: #666;
+            line-height: 1.4;
+        }
+        
+        .worker-actions {
+            margin-left: 10px;
+        }
+        
+        .worker-status {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 10px;
+            font-weight: 500;
+            margin-right: 8px;
+        }
+        
+        .worker-status.active {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .worker-status.installing {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
+        .worker-status.waiting {
+            background: #cce7ff;
+            color: #004085;
+        }
+        
+        .worker-status.terminated {
+            background: #f8d7da;
+            color: #721c24;
+        }
     </style>
 </head>
 <body>
@@ -197,25 +466,72 @@
         <h3>🗑️ 사이트 데이터 정리</h3>
     </div>
     
-    <div class="search-section">
-        <input type="text" id="searchInput" class="search-input" placeholder="사이트 검색...">
+    <!-- 탭 네비게이션 -->
+    <div class="tab-container">
+        <button class="tab-btn active" data-tab="sites">사이트 목록</button>
+        <button class="tab-btn" data-tab="workers">Worker 현황</button>
     </div>
     
-    <div class="controls">
-        <button id="selectAllBtn" class="btn btn-secondary">전체 선택</button>
-        <button id="deleteSelectedBtn" class="btn btn-danger" disabled>선택 삭제</button>
-        <button id="refreshBtn" class="btn btn-primary">새로고침</button>
+    <!-- 사이트 목록 탭 -->
+    <div id="sitesTab" class="tab-content active">
+        <div class="search-section">
+            <input type="text" id="searchInput" class="search-input" placeholder="사이트 검색...">
+        </div>
+        
+        <div class="controls">
+            <button id="selectAllBtn" class="btn btn-secondary">전체 선택</button>
+            <button id="deleteSelectedBtn" class="btn btn-danger" disabled>선택 삭제</button>
+            <button id="refreshBtn" class="btn btn-primary">새로고침</button>
+            <button id="clearHistoryBtn" class="btn btn-danger">방문 기록 삭제</button>
+        </div>
+        
+        <div id="stats" class="stats" style="display: none;">
+            총 <span id="totalSites">0</span>개 사이트, <span id="totalCookies">0</span>개 쿠키
+        </div>
+        
+        <div id="status" class="status" style="display: none;"></div>
+        
+        <div id="sitesContainer" class="sites-container">
+            <div id="loadingState" class="loading">
+                로딩 중...
+            </div>
+        </div>
     </div>
     
-    <div id="stats" class="stats" style="display: none;">
-        총 <span id="totalSites">0</span>개 사이트, <span id="totalCookies">0</span>개 쿠키
+    <!-- Worker 현황 탭 -->
+    <div id="workersTab" class="tab-content">
+        <div class="controls">
+            <button id="refreshWorkersBtn" class="btn btn-primary">Worker 새로고침</button>
+            <button id="terminateAllWorkersBtn" class="btn btn-danger">모든 Worker 종료</button>
+        </div>
+        
+        <div id="workerStats" class="stats" style="display: none;">
+            총 <span id="totalWorkers">0</span>개 Worker 실행 중
+        </div>
+        
+        <div id="workerStatus" class="status" style="display: none;"></div>
+        
+        <div id="workersContainer" class="sites-container">
+            <div id="workerLoadingState" class="loading">
+                Worker 정보 로딩 중...
+            </div>
+        </div>
     </div>
     
-    <div id="status" class="status" style="display: none;"></div>
-    
-    <div id="sitesContainer" class="sites-container">
-        <div id="loadingState" class="loading">
-            로딩 중...
+    <!-- 사이트 세부정보 모달 -->
+    <div id="siteDetailModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 id="modalTitle">사이트 세부정보</h4>
+                <button id="closeModal" class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="modalContent"></div>
+            </div>
+            <div class="modal-footer">
+                <button id="modalDeleteBtn" class="btn btn-danger">이 사이트 삭제</button>
+                <button id="modalCloseBtn" class="btn btn-secondary">닫기</button>
+            </div>
         </div>
     </div>
     
